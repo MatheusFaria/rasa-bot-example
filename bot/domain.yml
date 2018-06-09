@@ -1,0 +1,38 @@
+intents:
+  - greet
+  - affirm
+  - deny
+  - inform_car_model
+  - bye
+
+entities:
+  - car_model
+
+slots:
+  requested_slot:
+    type: unfeaturized
+  car_model_slot:
+    type: text
+  has_driver_license_slot:
+    type: bool
+
+templates:
+  utter_greet:
+    - "Hey =)"
+  utter_ask_car_model_slot:
+    - "What is your Car Model?"
+  utter_ask_has_driver_license_slot:
+    - "Do you have driver's license?"
+  utter_list_slots:
+    - "Car model: {car_model_slot} :: Has driver license: {has_driver_license_slot}"
+  utter_bye:
+    - "Bye o/"
+
+actions:
+  - utter_greet
+  - utter_ask_car_model_slot
+  - utter_ask_has_driver_license_slot
+  - utter_list_slots
+  - utter_bye
+  - bot.actions.ActionDriverLicenseForm
+
