@@ -4,9 +4,12 @@ intents:
   - deny
   - inform_car_model
   - bye
+  - inform_identification
 
 entities:
   - car_model
+  - identification
+  - info_useful
 
 slots:
   requested_slot:
@@ -15,6 +18,8 @@ slots:
     type: text
   has_driver_license_slot:
     type: bool
+  identification:
+    type: text
 
 templates:
   utter_greet:
@@ -27,6 +32,12 @@ templates:
     - "Car model: {car_model_slot} :: Has driver license: {has_driver_license_slot}"
   utter_bye:
     - "Bye o/"
+  utter_useful:
+    - "Was this information useful?"
+  utter_inform_id:
+    - "What is your id?"
+  utter_thanks:
+    - "Thank you!"
 
 actions:
   - utter_greet
@@ -34,5 +45,8 @@ actions:
   - utter_ask_has_driver_license_slot
   - utter_list_slots
   - utter_bye
+  - utter_useful
+  - utter_inform_id
+  - utter_thanks
   - bot.actions.ActionDriverLicenseForm
-
+  - bot.actions.ActionListSlots
