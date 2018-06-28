@@ -3,13 +3,11 @@ intents:
   - affirm
   - deny
   - inform_car_model
+  - inform_zipcode
   - bye
-  - inform_identification
 
 entities:
   - car_model
-  - identification
-  - info_useful
 
 slots:
   requested_slot:
@@ -18,7 +16,7 @@ slots:
     type: text
   has_driver_license_slot:
     type: bool
-  identification:
+  zipcode_slot:
     type: text
 
 templates:
@@ -28,25 +26,22 @@ templates:
     - "What is your Car Model?"
   utter_ask_has_driver_license_slot:
     - "Do you have driver's license?"
-  utter_list_slots:
-    - "Car model: {car_model_slot} :: Has driver license: {has_driver_license_slot}"
+  utter_ask_zipcode_slot:
+    - "What is your zipcode?"
   utter_bye:
     - "Bye o/"
   utter_useful:
     - "Was this information useful?"
-  utter_inform_id:
-    - "What is your id?"
   utter_thanks:
-    - "Thank you!"
+    - "Thank you! Bye..."
 
 actions:
   - utter_greet
   - utter_ask_car_model_slot
   - utter_ask_has_driver_license_slot
-  - utter_list_slots
+  - utter_ask_zipcode_slot
   - utter_bye
   - utter_useful
-  - utter_inform_id
   - utter_thanks
   - bot.actions.ActionDriverLicenseForm
   - bot.actions.ActionListSlots

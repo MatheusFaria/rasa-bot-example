@@ -46,8 +46,7 @@
 - my car is a [passat](car_model)
 - I have a [mustang](car_model)
 
-## intent:inform_identification
-- my id is [xx910](identification)
-- [yz789](identification) is my id
-- my identification is [tt673](identification)
-- [xc123](identification) is my identification number
+## intent:inform_zipcode
+- my zipcode is 12345
+- 12345 is my zipcode
+- zipcode 12345
