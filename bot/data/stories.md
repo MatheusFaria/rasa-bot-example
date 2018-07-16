@@ -9,7 +9,7 @@
   - slot{"requested_slot": "zipcode_slot"}
 * inform_zipcode
   - action_driver_license_form
-  - slot{"zipcode_slot": "12345"}
+  - slot{"zipcode_slot": "my zipcode is 12345"}
   - slot{"requested_slot": "has_driver_license_slot"}
 * affirm
   - slot{"has_driver_license_slot": true}
@@ -29,7 +29,7 @@
   - slot{"requested_slot": "zipcode_slot"}
 * inform_zipcode
   - action_driver_license_form
-  - slot{"zipcode_slot": "12345"}
+  - slot{"zipcode_slot": "my zipcode is 12345"}
   - slot{"requested_slot": "has_driver_license_slot"}
 * deny
   - slot{"has_driver_license_slot": false}

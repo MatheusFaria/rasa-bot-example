@@ -20,8 +20,8 @@ class ActionDriverLicenseForm(FormAction):
     @staticmethod
     def required_fields():
         return [
-            FreeTextFormField("zipcode_slot"),
             EntityFormField("car_model", "car_model_slot"),
+            FreeTextFormField("zipcode_slot"),
             BooleanFormField("has_driver_license_slot", "affirm", "deny"),
         ]
 
