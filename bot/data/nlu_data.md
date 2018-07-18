@@ -1,52 +1,32 @@
-## intent:greet
-- hey
-- hello
-- hi
-- hello there
-- good morning
-- good evening
-- moin
-- hey there
-- let's go
-- hey dude
-- goodmorning
-- goodevening
-- good afternoon
+## intent:cumprimentar
+- oi
+- ola
+- como vai?
+- bom dia
+- boa tarde
+- boa noite
+- oi, tudo bem?
+- oi, tudo bom?
 
-## intent:bye
-- good by
-- cee you later
-- good night
-- good afternoon
-- bye
-- goodbye
-- have a nice day
-- see you around
-- bye bye
-- see you later
+## intent:afirmar_proponente
+- sim
+- sim, eu sou
+- claro que sim
+- eu já sou um proponenete
+- já sou proponente
 
-## intent:affirm
-- yes
-- indeed
-- of course
-- that sounds good
-- correct
+## intent:negar
+- não
+- não, eu não sou
+- nunca me tornei um proponente
+- não, como me torno um?
 
-## intent:deny
-- no
-- never
-- I don't think so
-- don't like that
-- no way
+## intent:o_que_eh
+- não sei o que é um
+- o que é um
+- o que é
+- o que é isso?
+- pode conceituar?
+- pode explicar?
+- o que isso significa?
 
-## intent:inform_car_model
-- my car is a [civic](car_model)
-- I have a [golf](car_model)
-- my car is a [corolla](car_model)
-- my car is a [passat](car_model)
-- I have a [mustang](car_model)
-
-## intent:inform_zipcode
-- my zipcode is 12345
-- 12345 is my zipcode
-- zipcode 12345

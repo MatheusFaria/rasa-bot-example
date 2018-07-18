@@ -1,47 +1,26 @@
 intents:
-  - greet
-  - affirm
-  - deny
-  - inform_car_model
-  - inform_zipcode
-  - bye
-
-entities:
-  - car_model
+  - cumprimentar
+  - afirmar_proponente
+  - negar_proponente
+  - o_que_eh
 
 slots:
-  requested_slot:
-    type: unfeaturized
-  car_model_slot:
-    type: text
-  has_driver_license_slot:
+  eh_propenete:
     type: bool
-  zipcode_slot:
-    type: text
 
 templates:
-  utter_greet:
-    - "Hey =)"
-  utter_ask_car_model_slot:
-    - "What is your Car Model?"
-  utter_ask_has_driver_license_slot:
-    - "Do you have driver's license?"
-  utter_ask_zipcode_slot:
-    - "What is your zipcode?"
-  utter_bye:
-    - "Bye o/"
-  utter_useful:
-    - "Was this information useful?"
-  utter_thanks:
-    - "Thank you! Bye..."
+  utter_cumprimetar:
+    - "Olá, eu sou a Rouana sua assistente virtual da cultura"
+  utter_perguntar_eh_proponete:
+    - "Você é um proponente?"
+  utter_despedir:
+    - "Tchau, até a próxima =)"
 
 actions:
-  - utter_greet
-  - utter_ask_car_model_slot
-  - utter_ask_has_driver_license_slot
-  - utter_ask_zipcode_slot
-  - utter_bye
-  - utter_useful
-  - utter_thanks
-  - bot.actions.ActionDriverLicenseForm
-  - bot.actions.ActionListSlots
+  - utter_cumprimetar
+  - utter_perguntar_eh_proponete
+  - utter_despedir
+  - bot.actions.ActionSetSlotTrue
+  - bot.actions.ActionSetSlotFalse
+  - bot.actions.ActionWhatIs
+
